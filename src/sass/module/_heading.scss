@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.heading {
+  font-size:  30px;
+  font-weight: $bold;
+  line-height: calc(51 / 30);
+  text-transform:capitalize;
+  text-align: center;
+  position: relative;
+}
+
+.heading::after {
+  position: absolute;
+  content: '';
+  width:  60px;
+  height: 1px;
+  border: 1px solid $blue;
+  bottom:  rem(-7);
+  left: 50%;
+  transform: translateX(-50%);
+}

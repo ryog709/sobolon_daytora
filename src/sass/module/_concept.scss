@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.concept__wrapper {
+  margin-top: rem(64);
+    @include mq("md") {
+      display: flex;
+    }
+}
+
+.concept__image {
+  @include mq("md") {
+    width: calc(600 / 1200) * 100%;
+  }
+}
+
+.concept__image img {
+  aspect: ratio 345 / 230;
+  object-fit: cover;
+  height: auto;
+}
+
+.concept__box {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: unset;
+    width: calc(600 / 1200) * 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: rem(80);
+  }
+}
+
+.concept__title {
+  font-size: rem(20);
+  font-weight: $bold;
+  line-height: calc(34 / 20);
+}
+
+.concept__text {
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: calc(27 / 16);
+  margin-top: rem(32);
+}

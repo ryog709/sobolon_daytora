@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.header-nav {
+
+}
+
+.header-nav__lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav__list {
+  text-transform:capitalize;
+  font-weight: $regular;
+
+}
+.header-nav__list:not(:first-child) {
+  margin-left: rem(48);
+}

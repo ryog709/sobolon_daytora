@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.header {
+  padding-top: rem(20);
+  height: rem(60);
+  @include mq("md") {
+    height: rem(70);
+  }
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  max-width: rem(120);
+  width: 100%;
+}

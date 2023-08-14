@@ -1,0 +1,59 @@
+@use "global" as *;
+
+.footer {
+  padding-top: rem(40);
+  padding-bottom: rem(17);
+  background-color: $gray5;
+  @include mq("md") {
+    padding-top: rem(48);
+  }
+}
+
+.footer__logo {
+  max-width: rem(120);
+  width: 100%;
+  margin: auto;
+}
+
+.footer__more {
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: calc(45 / 12);
+  margin-top: rem(24);
+  text-align: center;
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.footer__caption {
+  margin-left: rem(32);
+}
+
+.footer__link {
+  text-align: center;
+}
+
+.fa-brands.fa-twitter {
+  margin-left: rem(10);
+  margin-right: rem(10);
+}
+.fa-brands.fa-instagram {
+  margin-left: rem(10);
+  margin-right: rem(10);
+}
+.fa-brands.fa-line {
+  margin-left: rem(10);
+  margin-right: rem(10);
+}
+
+.footer__copyright {
+  font-size: rem(12);
+  font-weight: $regular;
+  color: $gray2;
+  margin-top: rem(18);
+  display: flex;
+  justify-content: center;
+}

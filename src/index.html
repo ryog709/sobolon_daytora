@@ -1,41 +1,134 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="robots" content="noindex" />
-  <!-- meta情報 -->
-  <title>CodeUps</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <!-- ファビコン -->
-  <link rel="”icon”" href="" />
-  <!-- css -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./assets/js/script.js"></script>
-</head>
-<body>
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>sobolon</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="./assets/images/common/favicon.ico" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JavaScript -->
+    <script defer src="https://kit.fontawesome.com/346d65280e.js" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner inner">
+        <h1 class="header__logo">
+          <img src="./assets/images/common/logo.webp" width="120" height="22" alt="ヘッダーロゴ" />
+        </h1>
+        <nav class="header__nav header-nav u-desktop">
+          <ul class="header-nav__lists">
+            <li class="header-nav__list">concept</li>
+            <li class="header-nav__list">feature</li>
+            <li class="header-nav__list">products</li>
+            <li class="header-nav__list">news</li>
+            <li class="header-nav__list">contact</li>
+          </ul>
+        </nav>
 
-  </header>
-  <main>
-    <div class="inner">
-      <p class="test">変更のテスト</p>
-    </div>
-  </main>
-  <footer>
+        <div class="hamburger js-hamburger u-mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="mv">
+        <div class="mv__inner inner">
+          <picture class="mv__image">
+            <source
+              srcset="./assets/images/common/mv-pc.webp"
+              media="(min-width: 767px)"
+              width="990"
+              height="660"
+              type="image/webp"
+            />
+            <img
+              src="./assets/images/common/mv-sp.webp"
+              alt="ハンドメイドアクセサリーを女性の顔に飾りつけた様子"
+              width="345"
+              height="414"
+            />
+          </picture>
+          <div class="mv__box">
+            <div class="mv__title">“可愛い”&nbsp;で<br class="u-desktop" />地球を守る&#33;</div>
+            <div class="mv__text">
+              海洋マイクロプラスチックを素材とした<br />ハンドメイドアクセサリー「sobolon」
+            </div>
+          </div>
+        </div>
+      </div>
 
-  </footer>
-</body>
+      <!-- concept -->
+      <section class="concept section">
+        <div class="concept__inner inner">
+          <h2 class="concept__heading heading">concept</h2>
+          <div class="concept__wrapper">
+            <div class="concept__image">
+              <img
+                src="./assets/images/common/concept.webp"
+                alt="草原で女性が空に顔を向けて手を広げている様子"
+                width="600"
+                height="400"
+                loading="lazy"
+              />
+            </div>
 
+            <div class="concept__box">
+              <div class="concept__title">
+                可愛くてステキなのは当たり前。<br />
+                地球にやさしくあるのも当たり前。
+              </div>
+              <div class="concept__text">
+                「sobolon」は、海洋汚染の要因であるマイクロプラスチックを回収し、それらを素材としたハンドメイドアクセサリーを製作しているブランドです。
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner inner">
+        <div class="footer__logo">
+          <img
+            src="./assets/images/common/logo.webp"
+            alt="フッターロゴ"
+            width="120"
+            height="22"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="footer__more">
+          <p class="footer__policy">プライバシーポリシー</p>
+          <p class="footer__caption">特定商取引法に基づく表記</p>
+        </div>
+        <div class="footer__link">
+          <i class="fa-brands fa-twitter fa-xl" style="color: #3ea1d1"></i>
+          <i class="fa-brands fa-instagram fa-xl" style="color: #3ea1d1"></i>
+          <i class="fa-brands fa-line fa-xl" style="color: #3ea1d1"></i>
+        </div>
+        <small class="footer__copyright"
+          >&copy;&nbsp;2020&nbsp;sobolon&nbsp;All&nbsp;rights&nbsp;reserved</small
+        >
+      </div>
+    </footer>
+  </body>
 </html>
