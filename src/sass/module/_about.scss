@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.about {
+  height: rem(484);
+  background-image: url(../images/common/about-sp.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  @include mq("md") {
+    background-image: url(../images/common/about-pc.webp);
+    height: rem(478);
+  }
+}
+
+.about__box {
+  color: $white;
+  padding: rem(182) rem(15) 0;
+  @include mq("md") {
+      padding: rem(126) rem(40) 0;
+
+    }
+}
+
+.about__title {
+  font-size: rem(20);
+  font-weight: $bold;
+  line-height: calc(34 / 20);
+}
+
+.about__text {
+  font-size: rem(14);
+  font-weight: $bold;
+  line-height: calc(24 / 14);
+  margin-top: rem(32);
+    @include mq("md") {
+      margin-top: rem(40);
+    }
+}
