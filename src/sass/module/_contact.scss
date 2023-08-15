@@ -1,0 +1,83 @@
+@use "global" as *;
+
+.contact {
+  background-image: url(../images/common/contact-form-bg.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: rem(56) 0;
+}
+
+.contact__inner {
+  padding-left: rem(27.5);
+  padding-right: rem(27.5);
+}
+
+.contact__required {
+  text-align: center;
+  margin-top: rem(50);
+  font-size: rem(14);
+}
+
+.contact__required span {
+  color: #e7728e;
+}
+
+.contact form {
+  margin-top: rem(32);
+  @include mq("md") {
+    max-width: rem(510);
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+
+.contact dl {
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: auto rem(320);
+    column-gap: rem(10);
+    align-items: start;
+    margin-top: rem(32);
+  }
+}
+
+.contact dt {
+  background-color: #3ea1d1b3;
+  display: inline-block;
+  color: $white;
+  font-size: rem(14);
+  font-weight: $bold;
+  line-height: calc(24 / 14);
+  padding: rem(8) rem(15);
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: initial;
+    font-size: rem(18);
+    padding: rem(5) rem(10);
+    clip-path: polygon(0% 0%, 96% 0, 100% 50%, 96% 100%, 0% 100%);
+  }
+}
+
+.contact dt span {
+  color: #e7728e;
+}
+
+.contact__checkbox {
+  margin-left: rem(10);
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-left: initial;
+    text-align: center;
+  }
+}
+
+.contact__checkbox em {
+  text-decoration: underline;
+  color: $blue;
+}
+
+.contact__button {
+  text-align: center;
+  margin-top: rem(26);
+}

@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.products-card {
+}
+
+.products__image {
+  aspect-ratio: 260/260;
+}
+
+.products__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.products__box {
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: calc(24 / 14);
+  padding-top: rem(24);
+}
+
+.products__price {
+  color: $gray3;
+  margin-top: rem(16);
+}

@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.products__inner.inner {
+  padding-left: rem(57.5);
+  padding-right: rem(57.5);
+}
+
+.products__button {
+  text-align: center;
+  margin-top: rem(48);
+}

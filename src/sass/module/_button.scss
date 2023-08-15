@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.button {
+  color: $blue;
+  text-transform: uppercase;
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+  letter-spacing: 0.1em;
+  display: inline-block;
+  max-width: rem(157);
+  width: 100%;
+  padding: rem(10) 0;
+  border: rem(1) solid $blue;
+  text-align: center;
+}
