@@ -42,7 +42,7 @@ $check-border-cr: #3ea1d1; //外枠の色
 $check-bg-cr-inner: #3ea1d1; //チェックマークの背景色
 $check-space: rem(5); //チェックマークと文字の距離
 $check-space-betweenRadio: rem(20); //ラジオボタンの間の距離
-$check-weight: 2px; //チェックマークの線の太さ(px)
+$check-weight: 1px; //チェックマークの線の太さ(px)
 
 /*テキストエリアの指定*/
 $textarea-height: rem(122);
@@ -248,13 +248,43 @@ button,
   }
 
   &:checked + span {
-    &::after {
+    &::before {
       content: "";
       position: absolute;
       top: 50%;
       left: 0;
       display: block;
       opacity: 1;
+      transform: rotate(45deg);
+      border:  none;
+      transition: 0.3s ease;
+    }
+  }
+
+  &:checked + span {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      opacity: 1;
+      transform: rotate(45deg);
+      border:  none;
+      transition: 0.3s ease;
+    }
+  }
+
+  &:checked + span {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      opacity: 1;
+      border:  none;
+      transition: 0.3s ease;
       /*チェックマークじゃない場合は以下を変更する*/
       transform: translateY(-50%) rotate(-45deg);
       width: calc($check-size * 0.9);

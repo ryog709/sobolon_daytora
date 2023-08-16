@@ -32,6 +32,14 @@
   margin-left: rem(32);
 }
 
+.footer__policy:hover,
+.footer__caption:hover,
+.fa-brands.fa-twitter:hover,
+.fa-brands.fa-instagram:hover,
+.fa-brands.fa-line:hover {
+  opacity: 0.7;
+}
+
 .footer__link {
   text-align: center;
 }

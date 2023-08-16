@@ -1,5 +1,12 @@
 @use "global" as *;
 
+.mv {
+  margin-top: rem(60);
+    @include mq("md") {
+      margin-top: rem(70);
+    }
+}
+
 .mv__inner {
   @include mq("md") {
     position: relative;

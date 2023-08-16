@@ -12,4 +12,10 @@
   padding: rem(10) 0;
   border: rem(1) solid $blue;
   text-align: center;
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+  background-color: $blue;
+  color: $white;
 }

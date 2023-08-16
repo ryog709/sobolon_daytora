@@ -17,27 +17,47 @@
     <meta property="og:site_name" content="" />
     <meta property="og:description" content="" />
     <!-- ファビコン -->
-    <link rel="”icon”" href="./assets/images/common/favicon.ico" />
+    <link rel="shortcut icon" href="./assets/images/common/favicon.ico" type="image/x-icon">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
     <script defer src="https://kit.fontawesome.com/346d65280e.js" crossorigin="anonymous"></script>
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header js-header">
       <div class="header__inner inner">
         <h1 class="header__logo">
-          <img src="./assets/images/common/logo.webp" width="120" height="22" alt="ヘッダーロゴ" />
+          <a href="./" class="scroll-to-top">
+            <img
+              src="./assets/images/common/logo.webp"
+              width="120"
+              height="22"
+              alt="ヘッダーロゴ"
+            />
+          </a>
         </h1>
         <nav class="header__nav header-nav u-desktop">
           <ul class="header-nav__lists">
-            <li class="header-nav__list">concept</li>
-            <li class="header-nav__list">feature</li>
-            <li class="header-nav__list">products</li>
-            <li class="header-nav__list">news</li>
-            <li class="header-nav__list">contact</li>
+            <li class="header-nav__list"><a href="#concept">concept</a></li>
+            <li class="header-nav__list"><a href="#feature">feature</a></li>
+            <li class="header-nav__list"><a href="#products">products</a></li>
+            <li class="header-nav__list"><a href="#news">news</a></li>
+            <li class="header-nav__list"><a href="#contact">contact</a></li>
           </ul>
         </nav>
 
@@ -45,6 +65,31 @@
           <span></span>
           <span></span>
           <span></span>
+        </div>
+      </div>
+
+      <div class="drawer-menu js-drawer">
+        <div class="drawer-menu__wrap">
+          <div class="drawer-menu__left"></div>
+          <div class="drawer-menu__right">
+            <ul class="drawer-menu__items">
+              <li class="drawer-menu__item">
+                <a href="#" class="drawer-menu__link">concept</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a href="#" class="drawer-menu__link">feature</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a href="#" class="drawer-menu__link">products</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a href="#" class="drawer-menu__link">news</a>
+              </li>
+              <li class="drawer-menu__item">
+                <a href="#" class="drawer-menu__link">contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -72,7 +117,13 @@
       </div>
 
       <!-- concept -->
-      <section class="concept section">
+      <section
+        id="concept"
+        class="concept section wow animated fadeInUp"
+        ata-wow-delay="1s"
+        data-wow-offset="5"
+        data-wow-duration="2.5s"
+      >
         <div class="concept__inner inner">
           <h2 class="concept__heading heading">concept</h2>
           <div class="concept__wrapper">
@@ -97,7 +148,13 @@
           </div>
         </div>
       </section>
-      <section class="feature section">
+      <section
+        id="feature"
+        class="feature section wow animated fadeInUp"
+        ata-wow-delay="1s"
+        data-wow-offset="5"
+        data-wow-duration="2.5s"
+      >
         <div class="feature__inner inner">
           <h2 class="feature__heading heading">feature</h2>
           <div class="feature__cards cards">
@@ -112,10 +169,10 @@
                     loading="lazy"
                   />
                 </div>
+                <div class="card__box">
+                  <div class="card__title">素材は海で採れた<br />マイクロプラスチック</div>
+                </div>
               </a>
-              <div class="card__box">
-                <div class="card__title">素材は海で採れた<br />マイクロプラスチック</div>
-              </div>
             </div>
             <div class="cards__item card">
               <a href="#" class="card__link">
@@ -128,10 +185,10 @@
                     loading="lazy"
                   />
                 </div>
+                <div class="card__box">
+                  <div class="card__title">個性あふれる<br />“可愛い”デザイン</div>
+                </div>
               </a>
-              <div class="card__box">
-                <div class="card__title">個性あふれる<br />“可愛い”デザイン</div>
-              </div>
             </div>
             <div class="cards__item card">
               <a href="#" class="card__link">
@@ -144,16 +201,21 @@
                     loading="lazy"
                   />
                 </div>
+                <div class="card__box">
+                  <div class="card__title">世界にひとつだけの,<br />一点物アクセサリー</div>
+                </div>
               </a>
-              <div class="card__box">
-                <div class="card__title">世界にひとつだけの,<br />一点物アクセサリー</div>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="about">
+      <div
+        class="about section wow animated fadeInUp"
+        ata-wow-delay="1s"
+        data-wow-offset="5"
+        data-wow-duration="2.5s"
+      >
         <div class="about__box">
           <div class="about__title">
             消費者である私たちが、<br />地球環境のためにできることは何か？
@@ -165,7 +227,13 @@
       </div>
 
       <!-- products -->
-      <section class="products section">
+      <section
+        id="products"
+        class="products section wow animated fadeInUp"
+        ata-wow-delay="1s"
+        data-wow-offset="5"
+        data-wow-duration="2.5s"
+      >
         <div class="products__inner inner">
           <h2 class="products__heading heading">products</h2>
           <div class="products__cards products-cards">
@@ -180,13 +248,13 @@
                     loading="lazy"
                   />
                 </div>
-              </a>
-              <div class="products__box">
-                <div class="products__title">
-                  【しかくイヤリング】海洋マイクロプラスチックを使ったハンドメイドイヤリング(全7色)
+                <div class="products__box">
+                  <div class="products__title">
+                    【しかくイヤリング】海洋マイクロプラスチックを使ったハンドメイドイヤリング(全7色)
+                  </div>
+                  <p class="products__price">￥3,695</p>
                 </div>
-                <p class="products__price">￥3,695</p>
-              </div>
+              </a>
             </div>
             <div class="products__item products-card">
               <a href="#" class="products__link">
@@ -199,13 +267,13 @@
                     loading="lazy"
                   />
                 </div>
-              </a>
-              <div class="products__box">
-                <div class="products__title">
-                  【しかく指輪】海洋マイクロプラスチックを使ったハンドメイドアクセサリー/ゆびわ(全7色)
+                <div class="products__box">
+                  <div class="products__title">
+                    【しかく指輪】海洋マイクロプラスチックを使ったハンドメイドアクセサリー/ゆびわ(全7色)
+                  </div>
+                  <p class="products__price">￥2,390</p>
                 </div>
-                <p class="products__price">￥2,390</p>
-              </div>
+              </a>
             </div>
             <div class="products__item products-card">
               <a href="#" class="products__link">
@@ -218,13 +286,13 @@
                     loading="lazy"
                   />
                 </div>
-              </a>
-              <div class="products__box">
-                <div class="products__title">
-                  【ピンバッジ】海洋マイクロプラスチックを使ったsobolonオリジナルピンバッジ(全6色)
+                <div class="products__box">
+                  <div class="products__title">
+                    【ピンバッジ】海洋マイクロプラスチックを使ったsobolonオリジナルピンバッジ(全6色)
+                  </div>
+                  <p class="products__price">￥2,580</p>
                 </div>
-                <p class="products__price">￥2,580</p>
-              </div>
+              </a>
             </div>
           </div>
           <div class="products__button">
@@ -234,12 +302,18 @@
       </section>
 
       <!-- news -->
-      <section class="news section">
+      <section
+        id="news"
+        class="news section wow animated fadeInUp"
+        ata-wow-delay="1s"
+        data-wow-offset="5"
+        data-wow-duration="2.5s"
+      >
         <div class="news__inner inner">
           <h2 class="news__heading heading">news</h2>
           <div class="news__cards news-cards">
-            <div class="news__item news-card">
-              <a href="#" class="news__link">
+            <a href="#" class="news__link">
+              <div class="news__item news-card">
                 <div class="news__image">
                   <img
                     src="./assets/images/common/news-card01.webp"
@@ -249,19 +323,19 @@
                     loading="lazy"
                   />
                 </div>
-              </a>
-              <div class="news__box">
-                <time class="news__date" datetime="2020-02-04">2020年2月4日</time>
-                <div class="news__title">企業展終了&#33;次回は2/11(火)フェスタ出店します。</div>
-                <p class="news__text">
-                  「企業展」2日目&#33;大盛況に終わりました\(
-                  ˆoˆ)/来てくださったみなさん本当にありがとうございました！やっぱり、地元多治見での出店はみ…
-                </p>
+                <div class="news__box">
+                  <time class="news__date" datetime="2020-02-04">2020年2月4日</time>
+                  <div class="news__title">企業展終了&#33;次回は2/11(火)フェスタ出店します。</div>
+                  <p class="news__text">
+                    「企業展」2日目&#33;大盛況に終わりました\(
+                    ˆoˆ)/来てくださったみなさん本当にありがとうございました！やっぱり、地元多治見での出店はみ…
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
 
-            <div class="news__item news-card">
-              <a href="#" class="news__link">
+            <a href="#" class="news__link">
+              <div class="news__item news-card">
                 <div class="news__image">
                   <img
                     src="./assets/images/common/news-card02.webp"
@@ -271,21 +345,21 @@
                     loading="lazy"
                   />
                 </div>
-              </a>
-              <div class="news__box">
-                <time class="news__date" datetime="2020-02-04">2020年2月4日</time>
-                <div class="news__title">
-                  “可愛い”&nbsp;で&nbsp;地球を守る！&nbsp;海洋マイクロプラスチックを使ったハンドメイドアクセサリー屋さん&nbsp;【sobolon】
+                <div class="news__box">
+                  <time class="news__date" datetime="2020-02-04">2020年2月4日</time>
+                  <div class="news__title">
+                    “可愛い”&nbsp;で&nbsp;地球を守る！&nbsp;海洋マイクロプラスチックを使ったハンドメイドアクセサリー屋さん&nbsp;【sobolon】
+                  </div>
+                  <p class="news__text">
+                    こんにちは！私は、「
+                    “可愛い”で地球を守る！」をテーマに、昨今、環境問題として話題になっている、マイクロプラスチックを使ったアクセサリー…
+                  </p>
                 </div>
-                <p class="news__text">
-                  こんにちは！私は、「
-                  “可愛い”で地球を守る！」をテーマに、昨今、環境問題として話題になっている、マイクロプラスチックを使ったアクセサリー…
-                </p>
               </div>
-            </div>
+            </a>
 
-            <div class="news__item news-card">
-              <a href="#" class="news__link">
+            <a href="#" class="news__link">
+              <div class="news__item news-card">
                 <div class="news__image">
                   <img
                     src="./assets/images/common/news-card03.webp"
@@ -295,16 +369,16 @@
                     loading="lazy"
                   />
                 </div>
-              </a>
-              <div class="news__box">
-                <time class="news__date" datetime="2020-02-04">2020年2月4日</time>
-                <div class="news__title">sobolonの矛盾</div>
-                <p class="news__text">
-                  こんにちは！“可愛い”で 地球を守る！マイクロプラスチックアクセサリー【 sobolon
-                  】のリーダーひなこです&#33;sobolonを知らない……
-                </p>
+                <div class="news__box">
+                  <time class="news__date" datetime="2020-02-04">2020年2月4日</time>
+                  <div class="news__title">sobolonの矛盾</div>
+                  <p class="news__text">
+                    こんにちは！“可愛い”で 地球を守る！マイクロプラスチックアクセサリー【 sobolon
+                    】のリーダーひなこです&#33;sobolonを知らない……
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -314,7 +388,12 @@
       </section>
 
       <!-- environment -->
-      <div class="environment section">
+      <div
+        class="environment section wow animated fadeInUp"
+        ata-wow-delay="1s"
+        data-wow-offset="5"
+        data-wow-duration="2.5s"
+      >
         <div class="environment__inner inner">
           <div class="environment__wrapper">
             <div class="environment__image">
@@ -339,19 +418,18 @@
       </div>
 
       <!-- contact -->
-      <section class="contact section">
+      <section id="contact" class="contact section">
         <div class="contact__inner">
           <h2 class="contact__heading heading">contact</h2>
           <p class="contact__required"><span>＊</span>は入力必須項目です</p>
 
           <form action="" method="post" id="">
-
             <dl>
               <dt class="contact__name">
                 <label for="username">お名前<span>&#42;</span></label>
               </dt>
               <dd>
-                <input type="text" id="username" name="name" value="" />
+                <input type="text" id="username" name="name" value="" class="required" />
               </dd>
             </dl>
 
@@ -360,22 +438,15 @@
                 <label for="mail_address">メールアドレス<span>&#42;</span></label>
               </dt>
               <dd>
-                <input type="email" id="mail_address" name="mail_address" value="" class="validate[]" />
+                <input
+                  type="email"
+                  id="mail_address"
+                  name="mail_address"
+                  value=""
+                  class="required validate[]"
+                />
               </dd>
             </dl>
-
-
-            <!-- <dl>
-              <dt class="contact__radio">法人/個人の選択<span>&#42;</span></dt>
-              <dd class="">
-                <label class="radio1"
-                  ><input type="radio" name="target" value="ラジオボタン" checked /><span></span
-                ></label>
-                <label class="radio2"
-                  ><input type="radio" name="target" value="ラジオボタン2" /><span></span
-                ></label>
-              </dd>
-            </dl> -->
 
             <dl>
               <dt class="contact__radio">
@@ -383,36 +454,43 @@
               </dt>
               <dd class="">
                 <label class="radio1">
-                  <input type="radio" id="target1" name="target" value="ラジオボタン" checked /><span></span>
+                  <input
+                    type="radio"
+                    id="target1"
+                    name="target"
+                    value="ラジオボタン"
+                    checked
+                  /><span></span>
                 </label>
                 <label class="radio2">
-                  <input type="radio" id="target2" name="target" value="ラジオボタン2" /><span></span>
+                  <input
+                    type="radio"
+                    id="target2"
+                    name="target"
+                    value="ラジオボタン2"
+                  /><span></span>
                 </label>
               </dd>
             </dl>
-
-
-
 
             <dl>
               <dt class="contact__text">
                 <label for="contents">お問い合わせ内容<span>&#42;</span></label>
               </dt>
               <dd>
-                <textarea id="contents" name="contents"></textarea>
+                <textarea id="contents" name="contents" class="required"></textarea>
               </dd>
             </dl>
 
-
             <div class="contact__checkbox">
               <label>
-                <input type="checkbox" name="hoge" value="チェックボックス1" />
+                <input type="checkbox" name="hoge" value="チェックボックス1" class="required" />
                 <span><em>プライバシーポリシー</em>に同意します。</span>
               </label>
             </div>
 
             <div class="contact__button">
-              <input type="button" class="" value="送信" />
+              <input type="submit" class="submit-button" value="送信" />
             </div>
           </form>
         </div>

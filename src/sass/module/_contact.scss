@@ -81,3 +81,8 @@
   text-align: center;
   margin-top: rem(26);
 }
+
+.submit-button.enabled {
+  background-color: $blue; /* 色反転後の色を指定 */
+  color: $white;
+}

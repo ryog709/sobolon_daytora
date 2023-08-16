@@ -1,16 +1,24 @@
 @use "global" as *;
 
 .products-card {
+  max-width: rem(340);
+  width: 100%;
 }
 
 .products__image {
   aspect-ratio: 260/260;
+  overflow: hidden;
 }
 
 .products__image img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: all 0.3s ease 0s;
+}
+
+.products__link:hover .products__image img {
+  transform: scale(1.1);
 }
 
 .products__box {
