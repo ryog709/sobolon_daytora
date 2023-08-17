@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="" />
     <meta property="og:description" content="" />
     <!-- ファビコン -->
-    <link rel="shortcut icon" href="./assets/images/common/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,19 +74,19 @@
           <div class="drawer-menu__right">
             <ul class="drawer-menu__items">
               <li class="drawer-menu__item">
-                <a href="#" class="drawer-menu__link">concept</a>
+                <a href="#concept" class="drawer-menu__link">concept</a>
               </li>
               <li class="drawer-menu__item">
-                <a href="#" class="drawer-menu__link">feature</a>
+                <a href="#feature" class="drawer-menu__link">feature</a>
               </li>
               <li class="drawer-menu__item">
-                <a href="#" class="drawer-menu__link">products</a>
+                <a href="#products" class="drawer-menu__link">products</a>
               </li>
               <li class="drawer-menu__item">
-                <a href="#" class="drawer-menu__link">news</a>
+                <a href="#news" class="drawer-menu__link">news</a>
               </li>
               <li class="drawer-menu__item">
-                <a href="#" class="drawer-menu__link">contact</a>
+                <a href="#contact" class="drawer-menu__link">contact</a>
               </li>
             </ul>
           </div>
@@ -94,7 +94,7 @@
       </div>
     </header>
     <main>
-      <div class="mv">
+      <div class="mv wow fadeIn">
         <div class="mv__inner inner">
           <picture class="mv__image">
             <source
@@ -119,10 +119,10 @@
       <!-- concept -->
       <section
         id="concept"
-        class="concept section wow animated fadeInUp"
-        ata-wow-delay="1s"
-        data-wow-offset="5"
-        data-wow-duration="2.5s"
+        class="concept section wow fadeInUp"
+        data-wow-delay="1s"
+        data-wow-offset="2"
+        data-wow-duration="1.5s"
       >
         <div class="concept__inner inner">
           <h2 class="concept__heading heading">concept</h2>
@@ -150,10 +150,10 @@
       </section>
       <section
         id="feature"
-        class="feature section wow animated fadeInUp"
-        ata-wow-delay="1s"
-        data-wow-offset="5"
-        data-wow-duration="2.5s"
+        class="feature section wow fadeInUp"
+        data-wow-delay="1s"
+        data-wow-offset="2"
+        data-wow-duration="1.5s"
       >
         <div class="feature__inner inner">
           <h2 class="feature__heading heading">feature</h2>
@@ -211,17 +211,17 @@
       </section>
 
       <div
-        class="about section wow animated fadeInUp"
-        ata-wow-delay="1s"
-        data-wow-offset="5"
-        data-wow-duration="2.5s"
+        class="about section wow fadeInUp"
+        data-wow-delay="1s"
+        data-wow-offset="2"
+        data-wow-duration="1.5s"
       >
         <div class="about__box">
           <div class="about__title">
             消費者である私たちが、<br />地球環境のためにできることは何か？
           </div>
           <div class="about__text">
-            そんな視点からこのブランドは生まれました。<br />オシャレを楽しむ気持ちを大切にしながらも、ただ可愛いだけじゃない環境にやさしいアクセサリーを選ぶ人が増えていったら…<br />その変化は少しずつ、だけども本質的に、<br />この世界をHappyに変えていくのだと、私たちは考えます。
+            そんな視点からこのブランドは生まれました。<br />オシャレを楽しむ気持ちを大切にしながらも、<br />ただ可愛いだけじゃない環境にやさしいアクセサリーを選ぶ人が増えていったら…<br />その変化は少しずつ、だけども本質的に、<br />この世界をHappyに変えていくのだと、私たちは考えます。
           </div>
         </div>
       </div>
@@ -229,10 +229,10 @@
       <!-- products -->
       <section
         id="products"
-        class="products section wow animated fadeInUp"
-        ata-wow-delay="1s"
-        data-wow-offset="5"
-        data-wow-duration="2.5s"
+        class="products section wow fadeInUp"
+        data-wow-delay="1s"
+        data-wow-offset="2"
+        data-wow-duration="1.5s"
       >
         <div class="products__inner inner">
           <h2 class="products__heading heading">products</h2>
@@ -304,10 +304,10 @@
       <!-- news -->
       <section
         id="news"
-        class="news section wow animated fadeInUp"
-        ata-wow-delay="1s"
-        data-wow-offset="5"
-        data-wow-duration="2.5s"
+        class="news section wow fadeInUp"
+        data-wow-delay="1s"
+        data-wow-offset="2"
+        data-wow-duration="1s"
       >
         <div class="news__inner inner">
           <h2 class="news__heading heading">news</h2>
@@ -389,10 +389,10 @@
 
       <!-- environment -->
       <div
-        class="environment section wow animated fadeInUp"
-        ata-wow-delay="1s"
-        data-wow-offset="5"
-        data-wow-duration="2.5s"
+        class="environment section wow fadeInUp"
+        data-wow-delay="1s"
+        data-wow-offset="2"
+        data-wow-duration="1.5s"
       >
         <div class="environment__inner inner">
           <div class="environment__wrapper">
@@ -418,18 +418,34 @@
       </div>
 
       <!-- contact -->
-      <section id="contact" class="contact section">
+      <section
+        id="contact"
+        class="contact section wow fadeInUp"
+        data-wow-delay="1s"
+        data-wow-offset="2"
+        data-wow-duration="1.5s"
+      >
         <div class="contact__inner">
           <h2 class="contact__heading heading">contact</h2>
           <p class="contact__required"><span>＊</span>は入力必須項目です</p>
 
-          <form action="" method="post" id="">
+          <form
+            id="js-form"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf-Di7923-uw27Z52Ab8opok0Xj-_JgRToJ9AiEvMGTeHHT2A/formResponse"
+            method="post"
+          >
             <dl>
               <dt class="contact__name">
                 <label for="username">お名前<span>&#42;</span></label>
               </dt>
               <dd>
-                <input type="text" id="username" name="name" value="" class="required" />
+                <input
+                  type="text"
+                  id="username"
+                  name="entry.1407016334"
+                  value=""
+                  class="required"
+                />
               </dd>
             </dl>
 
@@ -441,7 +457,7 @@
                 <input
                   type="email"
                   id="mail_address"
-                  name="mail_address"
+                  name="YPqjbf"
                   value=""
                   class="required validate[]"
                 />
@@ -457,8 +473,8 @@
                   <input
                     type="radio"
                     id="target1"
-                    name="target"
-                    value="ラジオボタン"
+                    name="entry.275837881"
+                    value="法人"
                     checked
                   /><span></span>
                 </label>
@@ -466,8 +482,8 @@
                   <input
                     type="radio"
                     id="target2"
-                    name="target"
-                    value="ラジオボタン2"
+                    name="entry.275837881"
+                    value="個人"
                   /><span></span>
                 </label>
               </dd>
@@ -478,13 +494,18 @@
                 <label for="contents">お問い合わせ内容<span>&#42;</span></label>
               </dt>
               <dd>
-                <textarea id="contents" name="contents" class="required"></textarea>
+                <textarea id="contents" name="YPqjbf" class="required"></textarea>
               </dd>
             </dl>
 
             <div class="contact__checkbox">
               <label>
-                <input type="checkbox" name="hoge" value="チェックボックス1" class="required" />
+                <input
+                  type="checkbox"
+                  name="entry.872726400"
+                  value="プライバシーポリシーの同意"
+                  class="required"
+                />
                 <span><em>プライバシーポリシー</em>に同意します。</span>
               </label>
             </div>

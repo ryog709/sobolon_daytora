@@ -1,12 +1,15 @@
 @use "global" as *;
 
 .heading {
-  font-size:  30px;
+  font-size:   rem(30);
   font-weight: $bold;
   line-height: calc(51 / 30);
   text-transform:capitalize;
   text-align: center;
   position: relative;
+    @include mq("md") {
+      font-size:  rem(40);
+    }
 }
 
 .heading::after {

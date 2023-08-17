@@ -8,17 +8,16 @@
 }
 
 .environment__image {
-    @include mq("md") {
-      width: 50%;
-
-    }
+  @include mq("md") {
+    width: 50%;
+  }
 }
 
 .environment__box {
-    @include mq("md") {
-      width: 50%;
-      padding-right: rem(80);
-    }
+  @include mq("md") {
+    width: 50%;
+    padding-right: rem(80);
+  }
 }
 
 .environment__image img {
@@ -33,10 +32,11 @@
   font-weight: $bold;
   line-height: calc(34 / 20);
   margin-top: rem(40);
-    @include mq("md") {
-      font-size:  rem(28);
-      margin-top: rem(100);
-    }
+  @include mq("md") {
+    font-size: rem(28);
+    margin-top: rem(93);
+    letter-spacing: 0.02em;
+  }
 }
 
 .environment__text {
@@ -44,8 +44,8 @@
   font-weight: $regular;
   line-height: calc(24 / 14);
   margin-top: rem(32);
-    @include mq("md") {
-      font-size:  rem(16);
-      margin-top: rem(48);
-    }
+  @include mq("md") {
+    font-size: rem(16);
+    margin-top: rem(34);
+  }
 }

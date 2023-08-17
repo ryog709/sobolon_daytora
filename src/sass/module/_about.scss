@@ -1,38 +1,55 @@
 @use "global" as *;
 
 .about {
+  max-width: rem(1500);
+  margin-inline: auto;
   height: rem(484);
   background-image: url(../images/common/about-sp.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
   @include mq("md") {
     background-image: url(../images/common/about-pc.webp);
     height: rem(478);
   }
 }
 
-.about__box {
-  color: $white;
-  padding: rem(182) rem(15) 0;
-  @include mq("md") {
-      padding: rem(126) rem(40) 0;
+.about::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.12);
+}
 
-    }
+.about__box {
+  position: relative;
+  color: $white;
+  padding: rem(178) rem(15) 0;
+  @include mq("md") {
+    padding: rem(120) rem(40) 0;
+  }
 }
 
 .about__title {
   font-size: rem(20);
   font-weight: $bold;
   line-height: calc(34 / 20);
+    @include mq("md") {
+      letter-spacing: .1em;
+    }
 }
 
 .about__text {
   font-size: rem(14);
   font-weight: $bold;
   line-height: calc(24 / 14);
-  margin-top: rem(32);
-    @include mq("md") {
-      margin-top: rem(40);
-    }
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: rem(35);
+    font-size: rem(16);
+  }
 }

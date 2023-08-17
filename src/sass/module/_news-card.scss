@@ -27,16 +27,18 @@
 }
 
 .news__box {
-  padding-top: rem(24);
+  padding-top: rem(14);
 }
 
 .news__date {
+  letter-spacing: .05em;
   font-size: rem(14);
   font-weight: $regular;
   line-height: calc(24 / 14);
 }
 
 .news__title {
+  letter-spacing: .05em;
   font-size: rem(16);
   font-weight: $bold;
   line-height: calc(27 / 16);
@@ -51,7 +53,7 @@
   font-weight: $regular;
   line-height: calc(24 / 14);
   color: $gray2;
-  margin-top: rem(24);
+  margin-top: rem(12);
   display: -webkit-box; /* 文章が複数行に分かれて表示される */
   overflow: hidden; /* 文章があふれたときに、はみ出た部分を隠す */
   -webkit-box-orient: vertical; /* 子要素を縦に並べるための設定 */

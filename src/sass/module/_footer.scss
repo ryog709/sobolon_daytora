@@ -22,6 +22,7 @@
   margin-top: rem(24);
   text-align: center;
   @include mq("md") {
+    margin-top: rem(10);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +30,9 @@
 }
 
 .footer__caption {
-  margin-left: rem(32);
+  @include mq("md") {
+    margin-left: rem(32);
+  }
 }
 
 .footer__policy:hover,
@@ -42,6 +45,9 @@
 
 .footer__link {
   text-align: center;
+  @include mq("md") {
+    margin-top: rem(16);
+  }
 }
 
 .fa-brands.fa-twitter {

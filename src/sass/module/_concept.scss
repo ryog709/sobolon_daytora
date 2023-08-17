@@ -1,8 +1,9 @@
 @use "global" as *;
 
 .concept__wrapper {
-  margin-top: rem(64);
-    @include mq("md") {
+  margin-top: rem(56);
+  @include mq("md") {
+      margin-top: rem(68);
       display: flex;
     }
 }
@@ -20,7 +21,7 @@
 }
 
 .concept__box {
-  margin-top: rem(40);
+  margin-top: rem(34);
   @include mq("md") {
     margin-top: unset;
     width: calc(600 / 1200) * 100%;
@@ -41,5 +42,5 @@
   font-size: rem(16);
   font-weight: $regular;
   line-height: calc(27 / 16);
-  margin-top: rem(32);
+  margin-top: rem(17);
 }

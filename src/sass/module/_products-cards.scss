@@ -2,18 +2,16 @@
 
 .products-cards {
   display: grid;
-  row-gap: rem(48);
+  row-gap: rem(43);
   grid-template-rows: 1fr;
   place-content: center;
   width: 100%;
+  margin-inline: auto;
+  margin-top: rem(58);
   @include mq("md") {
     grid-template-columns: repeat(3, 1fr);
     column-gap: rem(80);
     max-width: rem(940);
+    margin-top: rem(70);
   }
-}
-
-.products__cards {
-  margin-inline: auto;
-  margin-top: rem(80);
 }

@@ -24,11 +24,11 @@
 .products__box {
   font-size: rem(14);
   font-weight: $regular;
-  line-height: calc(24 / 14);
-  padding-top: rem(24);
+  line-height: 1.9;
+  padding-top: rem(18);
 }
 
 .products__price {
   color: $gray3;
-  margin-top: rem(16);
+  margin-top: rem(2);
 }

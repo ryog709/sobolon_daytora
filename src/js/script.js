@@ -30,24 +30,12 @@ jQuery(function ($) {
     });
   });
 
-  //ハンバーガーメニュー
-  $(function () {
-    $(".js-hamburger,.js-drawer,.js-drawer a").click(function () {
-      $(".js-hamburger, .js-drawer").toggleClass("is-current");
-    });
+// ハンバーガーメニュー
+$(function () {
+  $(".js-hamburger,.js-drawer,.js-drawer a").click(function () {
+    $(".js-hamburger, .js-drawer").toggleClass("is-current");
   });
-
-  $(".js-drawer a").click(function () {
-    $(".js-hamburger, .js-drawer").removeClass("is-current");
-  });
-
-
-
-
-
-
-
-
+});
 
 
   $(document).ready(function () {
@@ -76,6 +64,24 @@ jQuery(function ($) {
         $(".submit-button").removeClass("enabled");
       }
     });
+  });
+
+  $form.submit(function (e) {
+    $.ajax({
+      url: $form.attr("action"),
+      data: $form.serialize(),
+      type: "POST",
+      dataType: "xml",
+      statusCode: {
+        0: function () {
+          //送信に成功したときの処理
+        },
+        200: function () {
+          //送信に失敗したときの処理
+        },
+      },
+    });
+    return false;
   });
 });
 

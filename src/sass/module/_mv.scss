@@ -44,12 +44,13 @@
   font-size: rem(26);
   font-weight: $bold;
   line-height: 1.3467;
+  letter-spacing: 0.02em;
 }
 
 .mv__text {
   font-weight: $regular;
   line-height: calc(27 / 16);
-  margin-top: rem(32);
+  margin-top: rem(23);
   @include mq("md") {
     margin-top: rem(28);
   }

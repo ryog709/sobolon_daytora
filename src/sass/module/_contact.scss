@@ -1,11 +1,13 @@
 @use "global" as *;
 
 .contact {
+  max-width: rem(1500);
+  margin-inline: auto;
   background-image: url(../images/common/contact-form-bg.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: rem(56) 0;
+  padding: rem(48) 0;
 }
 
 .contact__inner {
@@ -13,10 +15,18 @@
   padding-right: rem(27.5);
 }
 
+.contact__heading.heading {
+  color: $blue;
+}
+
 .contact__required {
   text-align: center;
-  margin-top: rem(50);
+  margin-top: rem(32);
   font-size: rem(14);
+  @include mq("md") {
+    margin-top: rem(66);
+    text-align: center;
+  }
 }
 
 .contact__required span {
@@ -24,7 +34,7 @@
 }
 
 .contact form {
-  margin-top: rem(32);
+  margin-top: rem(-6);
   @include mq("md") {
     max-width: rem(510);
     width: 100%;
@@ -38,7 +48,7 @@
     grid-template-columns: auto rem(320);
     column-gap: rem(10);
     align-items: start;
-    margin-top: rem(32);
+    margin-top: rem(30);
   }
 }
 
@@ -50,13 +60,19 @@
   font-weight: $bold;
   line-height: calc(24 / 14);
   padding: rem(8) rem(15);
-  margin-top: rem(32);
+  margin-top: rem(28);
   @include mq("md") {
     margin-top: initial;
     font-size: rem(18);
     padding: rem(5) rem(10);
     clip-path: polygon(0% 0%, 96% 0, 100% 50%, 96% 100%, 0% 100%);
   }
+}
+
+.contact dt {
+    @include mq("md") {
+      text-align: center;
+    }
 }
 
 .contact dt span {
@@ -80,6 +96,9 @@
 .contact__button {
   text-align: center;
   margin-top: rem(26);
+    @include mq("md") {
+      margin-top: rem(50);
+    }
 }
 
 .submit-button.enabled {

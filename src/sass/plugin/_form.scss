@@ -227,6 +227,9 @@ button,
     line-height: 1;
     cursor: pointer;
     transition: 0.3s ease;
+      @include mq("md") {
+        font-size:  rem(16);
+      }
 
     &::before {
       position: absolute;
@@ -256,7 +259,7 @@ button,
       display: block;
       opacity: 1;
       transform: rotate(45deg);
-      border:  none;
+      border: none;
       transition: 0.3s ease;
     }
   }
@@ -270,7 +273,7 @@ button,
       display: block;
       opacity: 1;
       transform: rotate(45deg);
-      border:  none;
+      border: none;
       transition: 0.3s ease;
     }
   }
@@ -283,15 +286,15 @@ button,
       left: 0;
       display: block;
       opacity: 1;
-      border:  none;
+      border: none;
       transition: 0.3s ease;
       /*チェックマークじゃない場合は以下を変更する*/
-      transform: translateY(-50%) rotate(-45deg);
-      width: calc($check-size * 0.9);
-      height: calc($check-size * 0.5);
+      transform: translateY(-50%) rotate(45deg);
+      width: calc($check-size * 0.5);
+      height: calc($check-size * 0.9);
       margin-top: -0.1em;
       margin-left: 0.1em;
-      border-left: $check-weight solid $check-bg-cr-inner;
+      border-right: $check-weight solid $check-bg-cr-inner;
       border-bottom: $check-weight solid $check-bg-cr-inner;
     }
   }
